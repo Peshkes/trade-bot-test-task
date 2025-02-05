@@ -1,12 +1,13 @@
 import './App.css'
+import AppRouter from "./routes/AppRouter.tsx";
 
 function App() {
 
-  return (
-    <>
-
-    </>
-  )
+    return (
+        <div>
+            <AppRouter/>
+        </div>
+    )
 }
 
 export default App
