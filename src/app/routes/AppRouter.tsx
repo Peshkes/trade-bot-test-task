@@ -12,8 +12,8 @@ const AppRouter = () => {
             <Route path={"/"} element={<DashboardPage/>} />
             <Route path={"/profile"} element={<ProfilePage/>} />
             <Route path={"/megabot"} element={<MegabotPage/>} />
-            <Route path={"/botmarket"} element={<BotMarketPage/>} />
-            <Route path={"/coinprices"} element={<CoinPricesPage/>} />
+            <Route path={"/bot-market"} element={<BotMarketPage/>} />
+            <Route path={"/coin-prices"} element={<CoinPricesPage/>} />
             <Route path={"*"} element={<ErrorPage/>} />
         </Routes>
     )

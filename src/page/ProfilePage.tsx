@@ -2,7 +2,9 @@ import UnderConstruction from "../shared/components/under-constuction/UnderConst
 
 const ProfilePage = () => {
     return (
-        <UnderConstruction/>
+        <main className={"page"}>
+            <UnderConstruction/>
+        </main>
     )
 }
 export default ProfilePage

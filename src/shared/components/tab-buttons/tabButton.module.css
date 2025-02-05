@@ -1,0 +1,22 @@
+.button{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.button svg{
+    height: 45%;
+    padding-bottom: 5px;
+}
+
+.button p{
+    height: 20%;
+    margin: 0;
+    font-size: 10px;
+    color: var(--text-color-0);
+    text-decoration: none;
+}

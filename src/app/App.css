@@ -1,7 +1,26 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: Roboto, "Roboto", sans-serif;
+    font-family: Roboto, "Roboto", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.app{
+    background-color: var(--background-color-0);
+    color: var(--text-color-1);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page {
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    flex: 1;
 }

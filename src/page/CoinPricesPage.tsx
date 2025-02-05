@@ -2,7 +2,9 @@ import UnderConstruction from "../shared/components/under-constuction/UnderConst
 
 const CoinPricesPage = () => {
     return (
-        <UnderConstruction/>
+        <main className={"page"}>
+            <UnderConstruction/>
+        </main>
     )
 }
 export default CoinPricesPage

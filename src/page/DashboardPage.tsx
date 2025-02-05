@@ -1,8 +1,8 @@
-import UnderConstruction from "../shared/components/under-constuction/UnderConstruction.tsx";
-
 const DashboardPage = () => {
     return (
-        <UnderConstruction/>
+        <div className={"page"}>
+            <p>Dashboard</p>
+        </div>
     )
 }
 export default DashboardPage
