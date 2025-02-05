@@ -1,8 +1,10 @@
 {
-  "trading_capital": 3.081,
-  "trading_capital_currency": "eth",
-  "balance": 14630,
-  "on_hold": 8300,
+  "balance": {
+    "trading_capital": 3.081,
+    "trading_capital_currency": "eth",
+    "balance": 14630,
+    "on_hold": 8300
+  },
   "bots": [
     {
       "name": "yellow_bot",
