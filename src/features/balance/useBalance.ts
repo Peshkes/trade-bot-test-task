@@ -23,7 +23,7 @@ export const useBalance = create<BalanceStore>((set, get) => ({
         }
     },
     initializeData: () => {
-        const storedData = LocalStorage.get<{ timestamp: number; data: Balance }>(STORAGE_KEY);
+        const storedData = LocalStorage.get<Balance>(STORAGE_KEY);
 
         if (storedData) {
             const {timestamp, data} = storedData;

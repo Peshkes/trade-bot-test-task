@@ -1,5 +1,10 @@
+export type LocalStorageData<T> = {
+    timestamp: number
+    data: T
+}
+
 export class LocalStorage {
-    static get<T>(key: string): T | null {
+    static get<T>(key: string): LocalStorageData<T> | null {
         const item = localStorage.getItem(key);
         if (!item) return null;
 
@@ -13,8 +18,8 @@ export class LocalStorage {
     }
 
     static set<T>(key: string, value: T) {
-        const item = JSON.stringify({timestamp: Date.now(), data: value});
-        localStorage.setItem(key, item);
+        const item: LocalStorageData<T> = {timestamp: Date.now(), data: value};
+        localStorage.setItem(key, JSON.stringify(item));
     }
 
     static remove(key: string) {
