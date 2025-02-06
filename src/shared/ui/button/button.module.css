@@ -1,11 +1,17 @@
 .button{
     color: var(--text-color-0);
     text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 
 .button svg {
     stroke: var(--text-color-0);
     fill: var(--text-color-0);
+}
+
+.button p {
+    color: var(--text-color-0);
 }
 
 .button:hover {
@@ -15,6 +21,10 @@
 .button:hover svg {
     stroke: var(--text-color-1);
     fill: var(--text-color-1);
+}
+
+.button:hover p {
+    color: var(--text-color-1);
 }
 
 .active a, .active p {
