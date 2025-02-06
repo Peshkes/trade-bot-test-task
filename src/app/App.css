@@ -21,6 +21,8 @@
 .page {
     box-sizing: border-box;
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    padding: 15px;
     flex: 1;
+    gap: 10px;
 }

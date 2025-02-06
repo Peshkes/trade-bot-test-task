@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.header h2{
+    margin: 0;
+    font-size: 17px;
+    color: var(--text-color-0);
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.left button{
+    justify-content: start;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.right button{
+    justify-content: end;
+}
+
+.header div button{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    aspect-ratio: 1;
+    padding: 0;
+}
+
+.header div button svg{
+    height: 60%;
+    aspect-ratio: 1;
+}

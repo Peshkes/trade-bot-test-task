@@ -1,10 +1,10 @@
 import {Route, Routes} from "react-router-dom";
-import DashboardPage from "../../page/DashboardPage.tsx";
 import ErrorPage from "../../page/ErrorPage.tsx";
 import ProfilePage from "../../page/ProfilePage.tsx";
 import MegabotPage from "../../page/MegabotPage.tsx";
 import BotMarketPage from "../../page/BotMarketPage.tsx";
 import CoinPricesPage from "../../page/CoinPricesPage.tsx";
+import DashboardPage from "../../page/dashboard/DashboardPage.tsx";
 
 const AppRouter = () => {
     return (

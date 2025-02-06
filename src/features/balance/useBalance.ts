@@ -4,7 +4,6 @@ import {LocalStorage} from "../../shared/functions/localStorage.ts";
 import {BalanceApi} from "./balanceApi.ts";
 
 const STORAGE_KEY = "balance_data";
-const EXPIRATION_TIME = import.meta.env.VITE_LOCAL_STORAGE_EXPIRATION;
 
 export const useBalance = create<BalanceStore>((set, get) => ({
     balance: undefined,
@@ -15,7 +14,7 @@ export const useBalance = create<BalanceStore>((set, get) => ({
     requestData: async () => {
         const balance = await BalanceApi.getBalance();
         if (balance) {
-            set(balance);
+            set((state) => ({ ...state, ...balance }));
             LocalStorage.set(STORAGE_KEY, balance);
         } else {
             console.error("Не удалось получить данные о балансе.");
@@ -23,19 +22,8 @@ export const useBalance = create<BalanceStore>((set, get) => ({
         }
     },
     initializeData: () => {
-        const storedData = LocalStorage.get<Balance>(STORAGE_KEY);
-
-        if (storedData) {
-            const {timestamp, data} = storedData;
-            const isExpired = Date.now() - timestamp > EXPIRATION_TIME;
-
-            if (isExpired) {
-                LocalStorage.remove(STORAGE_KEY);
-                console.warn("Данные устарели и были удалены из localStorage.");
-                get().requestData();
-            } else {
-                set(data);
-            }
-        }
+        const data = LocalStorage.get<Balance>(STORAGE_KEY);
+        if (data) set((state) => ({ ...state, ...data }));
+        else get().requestData();
     },
 }))

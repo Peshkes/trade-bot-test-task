@@ -1,0 +1,57 @@
+.container {
+    color: var(--text-color-0);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.top {
+    font-size: 12px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botleft {
+    font-size: 35px;
+    font-weight: 300;
+    padding-right: 10px;
+    width: 60%;
+    display: flex;
+}
+
+.amount {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: min-content;
+}
+
+.currency {
+    width: min-content;
+}
+
+.botright {
+    font-size: 13px;
+    padding: 3px 0 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 40%;
+}
+
+.botright div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.white {
+    color: white
+}
