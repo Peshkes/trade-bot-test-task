@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 40px;
     width: 100%;
 }
 
@@ -39,7 +39,7 @@
 .header div button{
     display: flex;
     align-items: center;
-    height: 70%;
+    height: 80%;
     aspect-ratio: 1;
     padding: 0;
 }

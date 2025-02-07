@@ -1,0 +1,52 @@
+.button{
+    box-sizing: border-box;
+    aspect-ratio: 1;
+    background-color: var(--background-color-1);
+    border: none;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.button svg{
+    width: 45%;
+}
+
+.button p {
+    margin: 5px 0 2px;
+}
+
+.button .stringPercents, .button .positivePercents, .button .negativePercents{
+    font-size: 10px;
+    margin: 0;
+}
+
+.stringPercents{
+    color: var(--text-color-0);
+}
+
+.positivePercents{
+    color: green;
+}
+
+.negativePercents{
+    color: red;
+}
+
+.button.active {
+    position: relative;
+    overflow: hidden;
+}
+
+.button.active::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #007BD800 20%, #007BD850 80%, #007BD899 100%);
+    pointer-events: none;
+    z-index: 10;
+}

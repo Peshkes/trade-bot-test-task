@@ -1,0 +1,29 @@
+.container{
+    flex: 1;
+    width: Calc(100% + 30px);
+    position: relative;
+    margin: 0 -15px;
+    padding-top: 10px;
+}
+
+.percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: green;
+    margin: 0;
+}
+
+.stringPercents{
+    color: var(--text-color-0);
+}
+
+.positivePercents{
+    color: green;
+}
+
+.negativePercents{
+    color: red;
+}

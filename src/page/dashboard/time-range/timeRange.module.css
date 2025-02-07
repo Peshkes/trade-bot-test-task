@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    font-size: 13px;
+}
+
+.container p {
+    display: block;
+    margin: 0;
+    width: max-content;
+}
+
+.buttons {
+    padding-left: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.last{
+    padding-left: 10px;
+}

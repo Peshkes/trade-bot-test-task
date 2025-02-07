@@ -10,12 +10,12 @@ export const Interval = {
 export type Interval = keyof typeof Interval;
 
 export const BotNames = {
-    "orange_bot": 'orange_bot',
-    "white_bot": 'white_bot',
-    "green_bot": 'green_bot',
-    "red_bot": 'red_bot',
-    "blue_bot": 'blue_bot',
-    "yellow_bot": 'yellow_bot'
+    "orange_bot": 'attack',
+    "white_bot": 'balance',
+    "green_bot": 'defence',
+    "red_bot": 'attack',
+    "blue_bot": 'balance',
+    "yellow_bot": 'defence'
 } as const;
 
 export type BotNames = keyof typeof BotNames;

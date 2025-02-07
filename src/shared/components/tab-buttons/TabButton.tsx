@@ -6,13 +6,15 @@ type Props = {
     Icon: FC;
     name: string;
     to: string;
+    notifications?: number;
 };
 
-const TabButton = ({ Icon, name, to}: Props) => {
+const TabButton = ({ Icon, name, to, notifications}: Props) => {
     return (
         <NavButton className={styles.button} to={to}>
             <Icon/>
             <p>{name}</p>
+            {notifications && notifications > 0 && <div className={styles.notifications}>{notifications}</div>}
         </NavButton>
     );
 };
